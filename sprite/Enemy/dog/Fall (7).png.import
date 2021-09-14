@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fall (7).png-c0e4f6999c1fead6eb0d7be3a285b0f8.stex"
+path="res://.import/Fall (7).png-34d7983de68bf8bef585179a56b9bde3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/sprite/Enemy/dog/Fall (7).png"
-dest_files=[ "res://.import/Fall (7).png-c0e4f6999c1fead6eb0d7be3a285b0f8.stex" ]
+source_file="res://sprite/Enemy/dog/Fall (7).png"
+dest_files=[ "res://.import/Fall (7).png-34d7983de68bf8bef585179a56b9bde3.stex" ]
 
 [params]
 

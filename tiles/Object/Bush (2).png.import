@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bush (2).png-7a3030e86d85cc36974d494f669fe885.stex"
+path="res://.import/Bush (2).png-fc3ebd05cd6f4ac2e8fb9bf527358399.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/tiles/Object/Bush (2).png"
-dest_files=[ "res://.import/Bush (2).png-7a3030e86d85cc36974d494f669fe885.stex" ]
+source_file="res://tiles/Object/Bush (2).png"
+dest_files=[ "res://.import/Bush (2).png-fc3ebd05cd6f4ac2e8fb9bf527358399.stex" ]
 
 [params]
 

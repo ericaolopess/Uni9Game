@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Hurt (2).png-199e34c28bdbed23afe34f99f68e0336.stex"
+path="res://.import/Hurt (2).png-69be319c657e650df9f32c71ade94736.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/sprite/Enemy/cat/Hurt (2).png"
-dest_files=[ "res://.import/Hurt (2).png-199e34c28bdbed23afe34f99f68e0336.stex" ]
+source_file="res://sprite/Enemy/cat/Hurt (2).png"
+dest_files=[ "res://.import/Hurt (2).png-69be319c657e650df9f32c71ade94736.stex" ]
 
 [params]
 

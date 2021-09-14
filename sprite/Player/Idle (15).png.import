@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Idle (15).png-578437d42405566dc3892968873cb4ce.stex"
+path="res://.import/Idle (15).png-5d0f58e3711c753f55ce892527305cf1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/sprite/Player/Idle (15).png"
-dest_files=[ "res://.import/Idle (15).png-578437d42405566dc3892968873cb4ce.stex" ]
+source_file="res://sprite/Player/Idle (15).png"
+dest_files=[ "res://.import/Idle (15).png-5d0f58e3711c753f55ce892527305cf1.stex" ]
 
 [params]
 

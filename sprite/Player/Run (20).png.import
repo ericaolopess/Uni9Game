@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Run (20).png-9cd74b4146a2072e8636838b3a6e5fbc.stex"
+path="res://.import/Run (20).png-397668d2239c32eb0fc0a26e42cb3137.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/sprite/Player/Run (20).png"
-dest_files=[ "res://.import/Run (20).png-9cd74b4146a2072e8636838b3a6e5fbc.stex" ]
+source_file="res://sprite/Player/Run (20).png"
+dest_files=[ "res://.import/Run (20).png-397668d2239c32eb0fc0a26e42cb3137.stex" ]
 
 [params]
 

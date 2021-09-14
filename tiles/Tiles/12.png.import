@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/12.png-7c17e981c8936c0009076907799bc22d.stex"
+path="res://.import/12.png-fe919c413047d565b50410e2cd2d1036.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/tiles/Tiles/12.png"
-dest_files=[ "res://.import/12.png-7c17e981c8936c0009076907799bc22d.stex" ]
+source_file="res://tiles/Tiles/12.png"
+dest_files=[ "res://.import/12.png-fe919c413047d565b50410e2cd2d1036.stex" ]
 
 [params]
 

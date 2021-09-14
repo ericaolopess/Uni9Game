@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Idle (9).png-ab6ba31a2eb45e18510db52179cd37e8.stex"
+path="res://.import/Idle (9).png-2ec9aa1c1656e3499e0551baba6c9ff3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/sprite/Enemy/dog/Idle (9).png"
-dest_files=[ "res://.import/Idle (9).png-ab6ba31a2eb45e18510db52179cd37e8.stex" ]
+source_file="res://sprite/Enemy/dog/Idle (9).png"
+dest_files=[ "res://.import/Idle (9).png-2ec9aa1c1656e3499e0551baba6c9ff3.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Run (7).png-8f2f17c87ffadc7673ec321eb4446892.stex"
+path="res://.import/Run (7).png-fe6b8fe78e9e794fb9687dafff2c2c02.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/sprite/Enemy/dog/Run (7).png"
-dest_files=[ "res://.import/Run (7).png-8f2f17c87ffadc7673ec321eb4446892.stex" ]
+source_file="res://sprite/Enemy/dog/Run (7).png"
+dest_files=[ "res://.import/Run (7).png-fe6b8fe78e9e794fb9687dafff2c2c02.stex" ]
 
 [params]
 

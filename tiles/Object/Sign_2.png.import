@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sign_2.png-dc4305b0a6f4dcf35ce7348381c737ea.stex"
+path="res://.import/Sign_2.png-94f49f27ffc105633b447850af09a8b4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/tiles/Object/Sign_2.png"
-dest_files=[ "res://.import/Sign_2.png-dc4305b0a6f4dcf35ce7348381c737ea.stex" ]
+source_file="res://tiles/Object/Sign_2.png"
+dest_files=[ "res://.import/Sign_2.png-94f49f27ffc105633b447850af09a8b4.stex" ]
 
 [params]
 

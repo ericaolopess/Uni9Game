@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dead (29).png-2aab0d901acfbf0fbf023fc7e3659a86.stex"
+path="res://.import/Dead (29).png-c260a8507b1989297bd1b308e3b312fa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/sprite/Player/Dead (29).png"
-dest_files=[ "res://.import/Dead (29).png-2aab0d901acfbf0fbf023fc7e3659a86.stex" ]
+source_file="res://sprite/Player/Dead (29).png"
+dest_files=[ "res://.import/Dead (29).png-c260a8507b1989297bd1b308e3b312fa.stex" ]
 
 [params]
 

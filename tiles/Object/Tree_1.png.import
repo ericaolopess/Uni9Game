@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tree_1.png-169c3e5ad0b59f7c9e0a6149cbe60924.stex"
+path="res://.import/Tree_1.png-d0a26ee146d69ea3b7b46f3daa78f641.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/tiles/Object/Tree_1.png"
-dest_files=[ "res://.import/Tree_1.png-169c3e5ad0b59f7c9e0a6149cbe60924.stex" ]
+source_file="res://tiles/Object/Tree_1.png"
+dest_files=[ "res://.import/Tree_1.png-d0a26ee146d69ea3b7b46f3daa78f641.stex" ]
 
 [params]
 

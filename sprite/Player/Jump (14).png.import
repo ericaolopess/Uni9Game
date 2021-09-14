@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Jump (14).png-d8ace422db622bbe2814fb525f88fd2c.stex"
+path="res://.import/Jump (14).png-5cb99205f77c6e763c6e4ec354a01435.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/sprite/Player/Jump (14).png"
-dest_files=[ "res://.import/Jump (14).png-d8ace422db622bbe2814fb525f88fd2c.stex" ]
+source_file="res://sprite/Player/Jump (14).png"
+dest_files=[ "res://.import/Jump (14).png-5cb99205f77c6e763c6e4ec354a01435.stex" ]
 
 [params]
 

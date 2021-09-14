@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Jump (6).png-eabc350952d879bf43f46448c1afcbf6.stex"
+path="res://.import/Jump (6).png-cd6b3282b808b85816eb74058ea25b4b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/sprite/Enemy/cat/Jump (6).png"
-dest_files=[ "res://.import/Jump (6).png-eabc350952d879bf43f46448c1afcbf6.stex" ]
+source_file="res://sprite/Enemy/cat/Jump (6).png"
+dest_files=[ "res://.import/Jump (6).png-cd6b3282b808b85816eb74058ea25b4b.stex" ]
 
 [params]
 

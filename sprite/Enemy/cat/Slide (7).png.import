@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Slide (7).png-89ff1251a583730816dce207b04c89e2.stex"
+path="res://.import/Slide (7).png-c852717d6b2721cd3490bf0ad6394507.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/sprite/Enemy/cat/Slide (7).png"
-dest_files=[ "res://.import/Slide (7).png-89ff1251a583730816dce207b04c89e2.stex" ]
+source_file="res://sprite/Enemy/cat/Slide (7).png"
+dest_files=[ "res://.import/Slide (7).png-c852717d6b2721cd3490bf0ad6394507.stex" ]
 
 [params]
 

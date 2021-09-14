@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Mushroom_1.png-a691f9214be5ac64b0645405e574720a.stex"
+path="res://.import/Mushroom_1.png-0838af485ad20a53d0d06538ad5f9d2e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/tiles/Object/Mushroom_1.png"
-dest_files=[ "res://.import/Mushroom_1.png-a691f9214be5ac64b0645405e574720a.stex" ]
+source_file="res://tiles/Object/Mushroom_1.png"
+dest_files=[ "res://.import/Mushroom_1.png-0838af485ad20a53d0d06538ad5f9d2e.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Hurt (8).png-a8c695319945e81f55af9d3b81a66130.stex"
+path="res://.import/Hurt (8).png-e21c794408b98c20d3b2e9e598fd5317.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/sprite/Enemy/dog/Hurt (8).png"
-dest_files=[ "res://.import/Hurt (8).png-a8c695319945e81f55af9d3b81a66130.stex" ]
+source_file="res://sprite/Enemy/dog/Hurt (8).png"
+dest_files=[ "res://.import/Hurt (8).png-e21c794408b98c20d3b2e9e598fd5317.stex" ]
 
 [params]
 

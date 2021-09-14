@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Walk (1).png-1aba7f6d7563d097d79f03d9ab116113.stex"
+path="res://.import/Walk (1).png-fd6b7b73cba22bd334488d70cc9bad58.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Uni9Game/sprite/Player/Walk (1).png"
-dest_files=[ "res://.import/Walk (1).png-1aba7f6d7563d097d79f03d9ab116113.stex" ]
+source_file="res://sprite/Player/Walk (1).png"
+dest_files=[ "res://.import/Walk (1).png-fd6b7b73cba22bd334488d70cc9bad58.stex" ]
 
 [params]
 
