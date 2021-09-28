@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://script/Faca.gd" type="Script" id=1]
+[ext_resource path="res://tiles/Object/pixel-art-animacao-sprite.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 45.6816, 243.573 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "New Anim"
+length = 4.0
+loop = true
+step = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("pixel-art-animacao-sprite:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, -30.0, -89.9999, -120.0, -180.0, -210.0, -270.0, -300.0, -360.0 ]
+}
+
+[node name="Faca" type="KinematicBody2D"]
+position = Vector2( 35.2778, 0 )
+rotation = -1.5708
+script = ExtResource( 1 )
+
+[node name="pixel-art-animacao-sprite" type="Sprite" parent="."]
+position = Vector2( -1.24829, 7.77234 )
+rotation = -5.34793
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -6.23077e-07, 14.2543 )
+shape = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 2 )
