@@ -14,6 +14,9 @@ func _physics_process(delta):
 	var grounded = is_on_floor();
 	var no_chao = $RayD.is_colliding() or $RayE.is_colliding()
 	
+	if Input.is_action_pressed("sair"):
+		get_tree().change_scene("res://scenes/Menu.tscn")
+	
 	if Input.is_action_pressed("right"):
 		$sprite.animation = "walk"
 		$sprite.flip_h = false

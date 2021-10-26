@@ -1,0 +1,118 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://font/Humble Boys demo.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://script/Menu.gd" type="Script" id=2]
+[ext_resource path="res://tiles/BG/D_NQ_NP_651145-MLB28909879455_122018-O.jpg" type="Texture" id=3]
+[ext_resource path="res://sprite/Player/Idle (1).png" type="Texture" id=4]
+[ext_resource path="res://sprite/Enemy/cat/Dead (10).png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 25
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 25
+font_data = ExtResource( 1 )
+
+[node name="Menu" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer"]
+anchor_left = -0.044
+anchor_top = -0.067
+anchor_right = 1.047
+anchor_bottom = 1.052
+margin_left = 0.0560036
+margin_top = 0.200001
+margin_right = -0.128052
+margin_bottom = -0.200012
+texture_normal = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton2" type="TextureButton" parent="CanvasLayer"]
+anchor_left = 0.47
+anchor_top = 0.231
+anchor_right = 1.013
+anchor_bottom = 1.071
+margin_left = 0.417419
+margin_top = 0.223373
+margin_right = 0.385498
+margin_bottom = 0.223328
+texture_normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton3" type="TextureButton" parent="CanvasLayer"]
+anchor_left = -0.044
+anchor_top = 0.231
+anchor_right = 0.362
+anchor_bottom = 1.0
+margin_left = 0.0560036
+margin_top = 0.223373
+margin_right = 0.311981
+margin_bottom = -7.17664
+texture_normal = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchor_top = 0.33
+anchor_right = 1.0
+anchor_bottom = 0.455
+margin_top = -1.52588e-05
+margin_bottom = -6.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 6
+custom_constants/shadow_offset_y = 12
+text = "Attack on Cat"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="play" type="Button" parent="CanvasLayer"]
+anchor_left = 0.334
+anchor_top = 0.54
+anchor_right = 0.478
+anchor_bottom = 0.615
+margin_left = -0.382477
+margin_top = -2.72913
+margin_right = 0.16153
+margin_bottom = 0.270874
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_pressed = Color( 0.372549, 0.0509804, 0.0509804, 1 )
+text = "PLAY"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quit" type="Button" parent="CanvasLayer"]
+anchor_left = 0.513
+anchor_top = 0.54
+anchor_right = 0.658
+anchor_bottom = 0.62
+margin_left = 0.470215
+margin_top = -2.72913
+margin_right = -0.00982666
+margin_bottom = 0.270874
+custom_fonts/font = SubResource( 3 )
+text = "QUIT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="CanvasLayer/play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="CanvasLayer/quit" to="." method="_on_quit_pressed"]

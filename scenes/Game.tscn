@@ -1,8 +1,10 @@
-[gd_scene load_steps=51 format=2]
+[gd_scene load_steps=53 format=2]
 
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Item.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/Plataforma.tscn" type="PackedScene" id=3]
+[ext_resource path="res://font/Humble Boys demo.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://tiles/BG/painel-de-festa-floresta-3-painel-em-tecido.jpg" type="Texture" id=5]
 [ext_resource path="res://sprite/Enemy/cat/Dead (9).png" type="Texture" id=82]
 [ext_resource path="res://sprite/Enemy/cat/Idle (5).png" type="Texture" id=89]
 [ext_resource path="res://sprite/Enemy/cat/Idle (7).png" type="Texture" id=90]
@@ -30,7 +32,6 @@
 [ext_resource path="res://tiles/Tiles/4.png" type="Texture" id=132]
 [ext_resource path="res://tiles/Tiles/11.png" type="Texture" id=133]
 [ext_resource path="res://tiles/Tiles/10.png" type="Texture" id=134]
-[ext_resource path="res://tiles/BG/BG.png" type="Texture" id=135]
 [ext_resource path="res://tiles/Tiles/12.png" type="Texture" id=136]
 [ext_resource path="res://tiles/Tiles/8.png" type="Texture" id=137]
 [ext_resource path="res://tiles/Tiles/2.png" type="Texture" id=138]
@@ -349,18 +350,32 @@ tracks/0/keys = {
 "values": [ Vector2( 2195.4, 259.598 ), Vector2( 2195.4, 129.259 ), Vector2( 2195.4, -92.4905 ), Vector2( 2195.4, 129.259 ), Vector2( 2195.4, 309.506 ) ]
 }
 
-[node name="Game" type="Node2D"]
+[sub_resource type="DynamicFont" id=12]
+size = 35
+outline_color = Color( 0.537255, 0.180392, 0.180392, 1 )
+font_data = ExtResource( 4 )
 
-[node name="BG" type="Sprite" parent="."]
-position = Vector2( 1350.34, 50.2823 )
+[node name="Game" type="Node2D"]
+__meta__ = {
+"_edit_horizontal_guides_": [ 702.432 ],
+"_edit_vertical_guides_": [ -221.726 ]
+}
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.5, 1 )
+
+[node name="BG" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 3739.38, -469 )
 scale = Vector2( 3.7295, 2.50162 )
-texture = ExtResource( 135 )
+texture = ExtResource( 5 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 9 )
 cell_size = Vector2( 128, 128 )
 format = 1
-tile_data = PoolIntArray( 262142, 0, 0, 262143, 1, 0, 196608, 1, 0, 196609, 1, 0, 196610, 1, 0, 196611, 1, 0, 196612, 1, 0, 196613, 3, 0, 196617, 0, 0, 196618, 1, 0, 196619, 1, 0, 196620, 1, 0, 196621, 1, 0, 196622, 1, 0, 196623, 1, 0, 327678, 5, 0, 327679, 4, 0, 262144, 4, 0, 262145, 4, 0, 262146, 4, 0, 262147, 4, 0, 262148, 4, 0, 262149, 6, 0, 262153, 5, 0, 262154, 4, 0, 262155, 4, 0, 262156, 4, 0, 262157, 4, 0, 262158, 4, 0, 262159, 4, 0, 393214, 12, 0, 393215, 8, 0, 327680, 8, 0, 327681, 8, 0, 327682, 8, 0, 327683, 8, 0, 327684, 8, 0, 327685, 8, 0, 327689, 12, 0, 327690, 8, 0, 327691, 8, 0, 327692, 8, 0, 327693, 8, 0, 327694, 8, 0, 327695, 8, 0 )
+tile_data = PoolIntArray( 131107, 1, 0, 131108, 1, 0, 131109, 1, 0, 131110, 1, 0, 131111, 1, 0, 131112, 1, 0, 131113, 1, 0, 131114, 1, 0, 131115, 1, 0, 131116, 1, 0, 131117, 1, 0, 262142, 0, 0, 262143, 1, 0, 196608, 1, 0, 196609, 1, 0, 196610, 1, 0, 196611, 1, 0, 196612, 1, 0, 196613, 3, 0, 196617, 0, 0, 196618, 1, 0, 196619, 1, 0, 196620, 1, 0, 196621, 1, 0, 196622, 1, 0, 196623, 1, 0, 196624, 1, 0, 196625, 1, 0, 196626, 1, 0, 196627, 1, 0, 196628, 1, 0, 196629, 1, 0, 196630, 1, 0, 196631, 1, 0, 196632, 1, 0, 196633, 1, 0, 196634, 1, 0, 196635, 1, 0, 196636, 1, 0, 196637, 1, 0, 196638, 1, 0, 196639, 1, 0, 196640, 1, 0, 196641, 1, 0, 196642, 1, 0, 196643, 1, 0, 196644, 4, 0, 196645, 4, 0, 196646, 4, 0, 196647, 4, 0, 196648, 4, 0, 196649, 4, 0, 196650, 4, 0, 196651, 4, 0, 196652, 4, 0, 196653, 4, 0, 327678, 5, 0, 327679, 4, 0, 262144, 4, 0, 262145, 4, 0, 262146, 4, 0, 262147, 4, 0, 262148, 4, 0, 262149, 6, 0, 262153, 5, 0, 262154, 4, 0, 262155, 4, 0, 262156, 4, 0, 262157, 4, 0, 262158, 4, 0, 262159, 4, 0, 262160, 4, 0, 262161, 4, 0, 262162, 4, 0, 262163, 4, 0, 262164, 4, 0, 262165, 4, 0, 262166, 4, 0, 262167, 4, 0, 262168, 4, 0, 262169, 4, 0, 262170, 4, 0, 262171, 4, 0, 262172, 4, 0, 262173, 4, 0, 262174, 4, 0, 262175, 4, 0, 262176, 4, 0, 262177, 4, 0, 262178, 4, 0, 262179, 4, 0, 262180, 4, 0, 262181, 4, 0, 262182, 4, 0, 262183, 4, 0, 262184, 4, 0, 262185, 4, 0, 262186, 4, 0, 262187, 4, 0, 262188, 4, 0, 262189, 4, 0, 393214, 12, 0, 393215, 8, 0, 327680, 8, 0, 327681, 8, 0, 327682, 8, 0, 327683, 8, 0, 327684, 8, 0, 327685, 8, 0, 327689, 12, 0, 327690, 8, 0, 327691, 8, 0, 327692, 8, 0, 327693, 8, 0, 327694, 8, 0, 327695, 8, 0, 327696, 8, 0, 327697, 8, 0, 327698, 8, 0, 327699, 8, 0, 327700, 8, 0, 327701, 8, 0, 327702, 8, 0, 327703, 8, 0, 327704, 8, 0, 327705, 8, 0, 327706, 8, 0, 327707, 8, 0, 327708, 8, 0, 327709, 8, 0, 327710, 8, 0, 327711, 8, 0, 327712, 8, 0, 327713, 8, 0, 327714, 8, 0, 327715, 8, 0, 327716, 8, 0, 327717, 8, 0, 327718, 8, 0, 327719, 8, 0, 327720, 8, 0, 327721, 8, 0, 327722, 8, 0, 327723, 8, 0, 327724, 8, 0, 327725, 8, 0 )
 
 [node name="Crate" type="Sprite" parent="."]
 position = Vector2( 95.9936, 326.58 )
@@ -377,15 +392,19 @@ position = Vector2( 668.697, 270.593 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 10 )
 animation = "idle"
-frame = 8
+frame = 5
 playing = true
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 334.761, 242.759 )
+position = Vector2( 334.446, 257.822 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2( 30.9125, 10.3781 )
 current = true
 zoom = Vector2( 2, 2 )
+limit_left = -222
+limit_bottom = 700
+limit_smoothed = true
 
 [node name="Coletaveis" type="Node" parent="."]
 
@@ -409,3 +428,25 @@ position = Vector2( 2195.4, -89.035 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Plataforma"]
 autoplay = "New Anim"
 "anims/New Anim" = SubResource( 11 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="score" type="Label" parent="CanvasLayer"]
+anchor_left = 0.024
+anchor_top = 0.05
+anchor_right = 0.184
+anchor_bottom = 0.144
+margin_left = 0.0108757
+margin_top = 1.46444
+margin_right = 0.170868
+margin_bottom = 0.0644379
+rect_pivot_offset = Vector2( 89.4975, 28.1024 )
+custom_fonts/font = SubResource( 12 )
+custom_colors/font_color = Color( 1, 0.960784, 0.960784, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 5
+text = "Score: 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}

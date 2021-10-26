@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/mario_moeda_efeito_sonoro_toquesengracadosmp3.com (1).mp3-f4acc6d62890250ec42b6b076f6e882c.mp3str"
+
+[deps]
+
+source_file="res://music/mario_moeda_efeito_sonoro_toquesengracadosmp3.com (1).mp3"
+dest_files=[ "res://.import/mario_moeda_efeito_sonoro_toquesengracadosmp3.com (1).mp3-f4acc6d62890250ec42b6b076f6e882c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
