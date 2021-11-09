@@ -14,7 +14,6 @@ var isDead
 func _ready():
 	isDead = false
 	
-	
 
 func _physics_process(delta):
 	if !(isDead):	
