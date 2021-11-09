@@ -116,6 +116,11 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 44 ), ExtResource( 15 ), ExtResource( 12 ), ExtResource( 5 ), ExtResource( 24 ), ExtResource( 38 ), ExtResource( 11 ), ExtResource( 17 ), ExtResource( 40 ), ExtResource( 30 ), ExtResource( 3 ), ExtResource( 32 ), ExtResource( 23 ), ExtResource( 46 ), ExtResource( 18 ), ExtResource( 50 ), ExtResource( 21 ), ExtResource( 43 ), ExtResource( 37 ), ExtResource( 36 ) ],
+"loop": true,
+"name": "run",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 20 ), ExtResource( 22 ), ExtResource( 45 ), ExtResource( 2 ), ExtResource( 33 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 47 ), ExtResource( 19 ), ExtResource( 39 ), ExtResource( 52 ), ExtResource( 42 ), ExtResource( 4 ), ExtResource( 10 ), ExtResource( 49 ), ExtResource( 31 ), ExtResource( 35 ), ExtResource( 7 ), ExtResource( 14 ) ],
 "loop": true,
 "name": "walk",
@@ -126,11 +131,6 @@ animations = [ {
 "name": "dead",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 44 ), ExtResource( 15 ), ExtResource( 12 ), ExtResource( 5 ), ExtResource( 24 ), ExtResource( 38 ), ExtResource( 11 ), ExtResource( 17 ), ExtResource( 40 ), ExtResource( 30 ), ExtResource( 3 ), ExtResource( 32 ), ExtResource( 23 ), ExtResource( 46 ), ExtResource( 18 ), ExtResource( 50 ), ExtResource( 21 ), ExtResource( 43 ), ExtResource( 37 ), ExtResource( 36 ) ],
-"loop": true,
-"name": "run",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 9 ), ExtResource( 16 ), ExtResource( 51 ), ExtResource( 8 ), ExtResource( 56 ), ExtResource( 54 ), ExtResource( 53 ), ExtResource( 55 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 66 ), ExtResource( 99 ), ExtResource( 93 ), ExtResource( 86 ), ExtResource( 65 ), ExtResource( 101 ), ExtResource( 73 ), ExtResource( 92 ), ExtResource( 72 ), ExtResource( 64 ), ExtResource( 90 ), ExtResource( 102 ), ExtResource( 77 ), ExtResource( 63 ), ExtResource( 67 ), ExtResource( 89 ), ExtResource( 68 ), ExtResource( 98 ), ExtResource( 80 ), ExtResource( 60 ) ],
 "loop": true,
 "name": "jump",
@@ -139,7 +139,7 @@ animations = [ {
 
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 61.5
-height = 69.0
+height = 25.5138
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 108 )
@@ -148,11 +148,10 @@ script = ExtResource( 108 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 18.4685, 15.063 )
+position = Vector2( 9.27612, 37.6904 )
 shape = SubResource( 2 )
 
 [node name="RayD" type="RayCast2D" parent="."]
@@ -160,3 +159,5 @@ position = Vector2( 30.9124, 54.7418 )
 
 [node name="RayE" type="RayCast2D" parent="."]
 position = Vector2( -0.31498, 54.7423 )
+
+[connection signal="animation_finished" from="sprite" to="." method="_on_sprite_animation_finished"]
